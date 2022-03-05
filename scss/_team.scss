@@ -1,0 +1,82 @@
+// team page
+.header-team {
+    height: auto;
+    display: flex;
+    align-items: center; 
+    padding: 0 1rem 0 1rem;
+
+    @include responsive(min-width, 600px) {
+        padding: 0;
+        height: 477px;
+    }
+
+    h1 {
+        font-family: $display;
+        color: $white;
+        font-size: 3rem;
+        border-left: 3px solid $white;
+        padding-left: 0.9375rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    
+        @include responsive(min-width, 600px) {
+          font-size: 5.375rem;
+        }
+      }
+    
+      p {
+        color: $white;
+        font-size: 1.375rem;
+        font-family: $micro;
+        font-weight: 300;
+        max-width: 830px;
+    }
+}
+
+.credentials-team {
+  
+    h2 {
+      font-family: 'FormaDJRMicro';
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      letter-spacing: 4px;
+      font-size: 1rem;
+      color: $tan;
+    }
+  
+    ul {
+      list-style: none;
+  
+      li {
+        font-family: 'FormaDJRMicro';
+        font-weight: bold;
+        color: $white;
+        border-left: 3px solid $theme_blue;
+        margin-bottom: 1.25rem;
+        padding-left: 1.25rem;
+      }
+    }
+  }
+
+  .team-wrap {
+      background-color: transparent;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+
+      @include responsive(min-width, 600px) {
+        background-color: $tan_light;
+      }
+
+      .team-title {
+        color: $white;
+        font-size: 1.875rem;
+        font-weight: bold;
+        font-family: $display;
+        margin-bottom: 1.5rem;
+
+        @include responsive(min-width, 600px) {
+          color: $theme_blue;
+        }
+      }
+  }

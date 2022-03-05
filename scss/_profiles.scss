@@ -1,0 +1,185 @@
+.p-header {
+    display: grid;
+    grid-template-areas: "profile-image" "name";
+    padding: 0 1rem 0 1rem;
+
+    @include responsive(min-width, 750px) {
+      grid-template-areas: "name name profile-image";
+      padding: 3rem 0 0 0;
+    }
+
+    .name {
+        grid-area: name;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        p {
+            color: $secondary;
+            font-size: 1rem;
+            font-family: $micro;
+            font-style: normal;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 2rem;
+            display: none;
+
+            @include responsive(min-width, 750px) {
+              display: block;
+            }
+        }
+
+        h1 {
+          font-size: 3.4375rem;
+          font-family: $display;
+          font-weight: bold;
+          border-left: 3px solid $white;
+          padding-left: 0.9375rem;
+          
+          @include responsive(min-width, 930px) {
+            font-size: 5.375rem;
+          }
+        }
+    }
+
+    .profile-image {
+        grid-area: profile-image;
+
+        .mobile-p {
+          color: $secondary;
+          font-size: 1rem;
+          font-family: $micro;
+          font-style: normal;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          margin-bottom: 2rem;
+
+          @include responsive(min-width, 750px) {
+            display: none;
+          }
+        }
+        
+        img {
+          width: 100%;
+          margin-bottom: 2rem;
+
+            @include responsive(min-width, 750px) {
+              max-width: 330px;
+              float: right;
+              margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.p-content {
+    background-color: $white;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $theme_blue;
+        font-size: 1.875rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+        font-family: $micro;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    @include responsive(min-width, 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(min-width, 850px) {
+      grid-template-columns: repeat(3, minmax(auto, 300px));
+    }
+
+    a {
+      text-decoration: none;
+    }
+}
+
+.img-wrap {
+    display: grid;
+
+    &:hover {
+      cursor: pointer;
+      -webkit-transition: ease-out 300ms;
+      -moz-transition: ease-out 300ms;
+      -o-transition: ease-out 300ms;
+      transition: ease-out 300ms;
+
+      .overlay {
+        opacity: 0;
+        -webkit-transition: ease-out 300ms;
+        -moz-transition: ease-out 300ms;
+        -o-transition: ease-out 300ms;
+        transition: ease-out 300ms;
+      }
+    }
+
+    .profile-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .overlay {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .title {
+      color: $white;
+      font-size: 2.875rem;
+      line-height: 1;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+      font-weight: bold;
+      font-family: $display;
+      max-width: 70%;
+    }
+
+    .title-o {
+      color: $tan;
+      font-size: 2.875rem;
+      line-height: 1;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+      font-weight: bold;
+      font-family: $display;
+      max-width: 70%;
+    }
+
+    .profile-wrap {
+      display: grid;
+
+      .profile, .title {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+
+    .profile-wrap-overlay {
+      display: grid;
+
+      .profile-o, .title-o {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }

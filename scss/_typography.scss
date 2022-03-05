@@ -1,0 +1,53 @@
+// Display bold
+@font-face {
+    src: url('../fonts/FormaDJRDisplay-Bold.eot'); /* IE < 9 */
+    src: url('../fonts/FormaDJRDisplay-Bold.eot?#') format("embedded-opentype"), /* IE 9 */
+         url('../fonts/FormaDJRDisplay-Bold.woff2') format("woff2"),
+         url('../fonts/FormaDJRDisplay-Bold.woff') format("woff");
+    font-family: 'FormaDJRDisplay';
+    font-style: normal;
+    font-weight: bold;
+  }
+
+// Micro regular
+@font-face {
+  src: url('../fonts/FormaDJRMicro-Regular.eot'); /* IE < 9 */
+  src: url('../fonts/FormaDJRMicro-Regular.eot?#') format("embedded-opentype"), /* IE 9 */
+       url('../fonts/FormaDJRMicro-Regular.woff2') format("woff2"),
+       url('../fonts/FormaDJRMicro-Regular.woff') format("woff");
+  font-family: 'FormaDJRMicro';
+  font-style: normal;
+  font-weight: normal;
+  }
+
+// Micro bold
+  @font-face {
+    src: url('../fonts/FormaDJRMicro-Bold.eot'); /* IE < 9 */
+    src: url('../fonts/FormaDJRMicro-Bold.eot?#') format("embedded-opentype"), /* IE 9 */
+         url('../fonts/FormaDJRMicro-Bold.woff2') format("woff2"),
+         url('../fonts/FormaDJRMicro-Bold.woff') format("woff");
+    font-family: 'FormaDJRMicro';
+    font-style: normal;
+    font-weight: bold;
+    }
+
+// Micro italic
+  @font-face {
+    src: url('../fonts/FormaDJRMicro-Italic.eot'); /* IE < 9 */
+    src: url('../fonts/FormaDJRMicro-Italic.eot?#') format("embedded-opentype"), /* IE 9 */
+         url('../fonts/FormaDJRMicro-Italic.woff2') format("woff2"),
+         url('../fonts/FormaDJRMicro-Italic.woff') format("woff");
+    font-family: 'FormaDJRMicro';
+    font-style: italic;
+    font-weight: normal;
+    }
+
+    @font-face {
+    src: url('../fonts/FormaDJRMicro-Light.eot'); /* IE < 9 */
+    src: url('../fonts/FormaDJRMicro-Light.eot?#') format("embedded-opentype"), /* IE 9 */
+         url('../fonts/FormaDJRMicro-Light.woff2') format("woff2"),
+         url('../fonts/FormaDJRMicro-Light.woff') format("woff");
+    font-family: 'FormaDJRMicro';
+    font-style: normal;
+    font-weight: 300;
+    }

@@ -1,0 +1,30 @@
+footer {
+  height: 100%;
+  padding: 1.5rem;
+  background-color: $theme_blue_two;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'FormaDJRMicro';
+  font-weight: 300;
+  text-align: center;
+
+  .site-info {
+    margin: 0 auto;
+    
+    img {
+      margin: 0 auto .5rem auto;
+    }
+    p {
+      font-size: 0.875rem;
+      margin-bottom: .5rem;
+    }
+  
+    a {
+      font-size: 0.875rem;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+}

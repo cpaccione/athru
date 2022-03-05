@@ -1,0 +1,141 @@
+// services page
+.header-service {
+    height: 350px;
+    display: flex;
+    align-items: center; 
+    padding: 0 1rem 0 1rem;
+
+    // @include responsive(min-width, 600px) {
+    //     padding: 0;
+    //     height: 477px;
+    // }
+
+    h1 {
+        font-family: $display;
+        color: $white;
+        font-size: 3rem;
+        border-left: 3px solid $white;
+        padding-left: 0.9375rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    
+        @include responsive(min-width, 600px) {
+          font-size: 5.375rem;
+        }
+      }
+    
+      p {
+        color: $white;
+        font-size: 1.375rem;
+        font-family: $micro;
+        font-weight: 300;
+        max-width: 500px;
+      }
+}
+
+
+.services {
+    background-color: $tan_light;
+    padding-bottom: 5rem;
+
+    .s-header {
+        padding: 1rem;
+        display: grid;
+        grid-template-areas: "icon" "copy";
+        grid-template-columns: 1fr;
+
+        @include responsive(min-width, 600px) {
+            padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+            grid-template-areas: "copy icon";
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .copy {
+            grid-area: copy;
+
+            h2 {
+                color: $highlight;
+                margin-bottom: 1rem;
+                font-size: 2.125rem;
+                font-family: $display;
+                font-weight: bold;
+            }
+
+            p {
+                color: $main;
+                font-family: $micro;
+                font-size: 1.25rem;
+                font-weight: 300;
+            }
+        }
+
+        .icon {
+            grid-area: icon;
+            padding: 2rem 0 2rem 0;
+
+            @include responsive(min-width, 600px) {
+                padding: 0;
+            }
+
+            @include responsive(min-width, 600px) {
+                img {
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .body-bg {
+        margin: 0 1rem 0 1rem;
+        background-color: $theme_blue;
+        background-image: url('../images/bg.png');
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: 400px;
+
+        @include responsive(min-width, 600px) {
+            margin: 0 3.5rem 0 3.5rem;
+        }
+    }
+    
+    .body {
+        padding: 3rem 1rem 3rem 1rem;
+        background-color: $white;
+        max-width: 721px;
+        display: grid;
+        grid-template-columns: minmax(auto, 110px) minmax(auto, 608px);
+        grid-gap: 2rem 1rem;
+        // grid-template-areas: "icon main";
+
+        @include responsive(min-width, 600px) {
+            padding: 3rem 2rem 3rem 2rem;
+            grid-gap: 2rem;
+        }
+
+        .icon {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .main {
+            h3 {
+                color: $theme_blue;
+                margin-bottom: 1rem;
+                font-size: 1.0625rem;
+                font-family: $micro;
+                font-weight: bold;
+            }
+
+            p {
+                color: $theme_blue;
+                font-family: $micro;
+                font-size: 1rem;
+                font-style: italic;
+            }
+        }
+    }
+}
+
