@@ -137,23 +137,7 @@
       <div class="col3">
         <div class="contact-form">
           <h3>To Get Started With No Obligation, Just Fill Out The Form Below. Athru Will Do The Rest.</h3>
-          <form action="https://getform.io/f/766d78d5-cadb-4559-b6b0-f569f82d3b81" target="blank" method="POST">
-            <div class="input-wrap">
-              <input class="firstname" type="text" name="firstname" placeholder="First Name*" required>
-              <input class="lastname" type="text" name="lastname" placeholder="Last Name*" required>
-            </div>
-            <div class="company-phone">
-              <input class="company" type="text" name="company" placeholder="Company">
-              <input class="phone" type="tel" name="phone" placeholder="Phone Number">
-            </div>
-            <div class="email-wrap">
-              <input class="email-input" type="email" name="email" placeholder="Email Address*" required>
-            </div>
-            <div class="text-wrap">
-              <textarea id="textarea" name="message" rows="8" cols="80" placeholder="Message"></textarea>
-            </div>
-            <button class="form-button" type="submit">submit</button>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="81" title="Main Contact Form"]'); ?>
         </div>
       </div>
       <div class="col4"></div>

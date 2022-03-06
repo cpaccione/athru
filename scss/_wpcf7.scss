@@ -1,0 +1,58 @@
+.wpcf7 .main-contact-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: .50rem;
+	row-gap: .50rem;
+}
+
+.wpcf7 .main-contact-form .first-name input,
+.wpcf7 .main-contact-form .last-name input,
+.wpcf7 .main-contact-form .company input,
+.wpcf7 .main-contact-form .phone-number input,
+.wpcf7 .main-contact-form .email-address input,
+.wpcf7 .main-contact-form .wpcf7-textarea {
+	width: 100%;
+    border: 0;
+    padding: 1rem;
+}
+
+.wpcf7 .main-contact-form .email-address-col,
+.wpcf7 .main-contact-form .message-col {
+	grid-column: span 2;
+}
+
+// .wpcf7-submit {
+//     width: 12rem;
+//     font-weight: bold;
+// 	background-color: transparent;
+//     border: 2px solid $tan;
+//     color: $tan !important;
+//     text-transform: uppercase;
+//     border-radius: 9999px;
+//     cursor: pointer;
+
+//     &:hover {
+//         background-color: $tan;
+//         color: $main !important;
+//     }
+// }
+
+.wpcf7-not-valid-tip {
+    background-color: $highlight;
+    color: $black;
+    padding: .50rem;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    font-size: 1.25rem;
+    background-color: $white;
+    color: $black;
+    border-color: $tan;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+    font-size: 1.25rem;
+    background-color: $white;
+    color: $black;
+    border-color: $highlight;
+}

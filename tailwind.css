@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wpcf7-submit {
+    @apply
+    font-bold
+    border-2
+    border-a-tan
+    text-a-tan
+    hover:bg-a-tan
+    hover:text-blue
+    uppercase
+    rounded-full
+    cursor-pointer
+    w-48
+    bg-transparent
+    p-4;
+}
+
+.wpcf7 #first-name,
+.wpcf7 #last-name,
+.wpcf7 #company,
+.wpcf7 #phone-number,
+.wpcf7 #email-address, 
+.wpcf7-textarea {
+    @apply w-full;
+}
