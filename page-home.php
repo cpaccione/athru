@@ -26,7 +26,7 @@
     <div class="our-mission-mobile">
       <h2>Our Mission</h2>
       <h3 data-aos="fade-right">&#147;If you always do what you have always done, you'll probably get what you already got&#148; <span style="white-space: nowrap;">&#8212; Albert Einstein</span></h3>
-      <p data-aos="fade-up">Athru helps Founder/Owners of Service, Healthcare and Tech companies to accelerate growth, improve performance and maximize business value to generate the greatest return on their most important investment.</p>
+      <p data-aos="fade-up">Athru helps Founder/Owners of marketing services and tech businesses to accelerate Growth.</p>
     </div>
 
     <!-- our mission desktop -->
@@ -39,7 +39,7 @@
       <div class="col3">
         <div class="wrap">
           <h3 data-aos="fade-right">&#147;If you always do what you have always done, you'll probably get what you already got&#148; &#8212; Albert Einstein</h3>
-          <p data-aos="fade-up">Athru helps Founder/Owners of Service, Health/Wellness and Cannabis/CBD to accelerate growth, improve performance and maximize business value to generate the greatest return on their most important investment.</p>
+          <p data-aos="fade-up">Athru helps Founder/Owners of marketing services and tech businesses to accelerate Growth.</p>
         </div>
       </div>
       <div class="col4"></div>
@@ -48,7 +48,7 @@
   <div class="what-we-offer-mobile">
     <h2>what we offer</h2>
     <h3>what can Athru do for you?</h3>
-    <p>We are a leading advisor to independent marketing services, Health/Wellness and Cannabis/CBD companies who want to maximize their value and capitalize on greater returns with special focus on companies considering either an acquisition or sale transaction.</p>
+    <p>We are a leading advisor to independent marketing services and tech business companies, who want to maximize their value and capitalize on greater returns with special focus on companies considering either an acquisition or sale transaction.</p>
     <div class="mission-attributes">
       <div class="mission-list">
         <div class="mission-wrap">
@@ -83,7 +83,7 @@
     <div class="col2">
       <div class="wrap">
         <h3 data-aos="fade-right">what can athru do for you?</h3>
-        <p data-aos="fade-up">We are a leading advisor to independent marketing services, Health/Wellness and Cannabis/CBD companies who want to maximize their value and capitalize on greater returns with special focus on companies considering either an acquisition or sale transaction.</p>
+        <p data-aos="fade-up">We are a leading advisor to independent marketing services and tech business companies, who want to maximize their value and capitalize on greater returns with special focus on companies considering either an acquisition or sale transaction.</p>
         <div class="mission-attributes-desktop">
           <div class="mission-list">
             <div class="mission-wrap">
@@ -140,7 +140,7 @@
     <div class="col3">
       <div class="wrap">
         <h3 data-aos="fade-left">Strategic Advice Supported By Investment Bank Expertise And Connectivity.</h3>
-        <p data-aos="fade-up">Athru Strategic Advisory capabilities and services is enhanced through our Cooperation Agreement with leading, Investment Bank, <a style="color: #272D40; text-decoration: underline; font-weight: bold;" href="https://resultsig.com/" target="_blank">Results International</a> which serves the Global Marketing, Technology and Healthcare sectors through offices in New York, London, Tokyo and Singapore.</p>
+        <p data-aos="fade-up">Athru Strategic Advisory capabilities and services are enhanced through our working partnerships with several leading investment banks.</p>
       </div>
     </div>
     <div class="col4"></div>
@@ -188,16 +188,16 @@
       <!-- info grid -->
       <div class="info-grid">
         <div style="border-top: none; border-left: none; border-bottom: none; border-right: none;" class="col col1">
-          <h2 data-aos="flip-up">100</h2>
-          <p>Companies and agencies worked with.</p>
+          <h2 data-aos="flip-up">126</h2>
+          <p>Tech and Marketing services firms worked with</p>
         </div>
         <div style="border-top: none; border-bottom: none; border-right: none;" class="col">
           <h2 data-aos="flip-up">3</h2>
-          <p>Key categories of focus &#151; Marketing Services, Cannabis/CBD &amp; Health/Wellness</p>
+          <p>Key categories of focus, Marketing Services, MarTech, and Healthcare</p>
         </div>
         <div style="border-top: none; border-bottom: none; border-right: none;" class="col col3">
-          <h2 data-aos="flip-up">75</h2>
-          <p>Buyers we work with &#151; PE firms, majority investors, holding companies, family offices and boutique buyers.</p>
+          <h2 data-aos="flip-up">350</h2>
+          <p>Buyers we work with- PE firms, majority investors, holding companies, family offices, and strategic buyers</p>
         </div>
         <div style="border-left: none; border-bottom: none; border-right: none;" class="col">
           <h2 data-aos="flip-up">140</h2>
@@ -228,9 +228,9 @@
 <div class="credentials-mobile">
   <h2>credentials</h2>
   <ul class="credential-list">
-    <li><span>100</span> &nbsp;Companies and agencies worked with.</li>
-    <li><span>3</span> &nbsp;Key categories of focus &#151; Marketing Services, Technology, &amp; Healthcare.</li>
-    <li><span>75</span> &nbsp;Buyers we work with &#151; PE firms, majority investors, holding companies, family offices and boutique buyers.</li>
+    <li><span>126</span> &nbsp;Tech and Marketing services firms worked with</li>
+    <li><span>3</span> &nbsp;Key categories of focus, Marketing Services, MarTech, and Healthcare</li>
+    <li><span>350</span> &nbsp;Buyers we work with- PE firms, majority investors, holding companies, family offices, and strategic buyers</li>
     <li><span>140</span> &nbsp;Combined years of experience across our partners.</li>
     <li><span>500</span> &nbsp;Proprietary &amp; secondary research databases we use to cover our key focus categories.</li>
   </ul>
@@ -247,7 +247,23 @@
       <div class="col3">
         <div class="contact-form">
           <h3>To Get Started With No Obligation, Just Fill Out The Form Below. Athru Will Do The Rest.</h3>
-          <?php echo do_shortcode('[contact-form-7 id="81" title="Main Contact Form"]'); ?>
+          <form action="https://getform.io/f/766d78d5-cadb-4559-b6b0-f569f82d3b81" target="blank" method="POST">
+            <div class="input-wrap">
+              <input class="firstname" type="text" name="firstname" placeholder="First Name*" required>
+              <input class="lastname" type="text" name="lastname" placeholder="Last Name*" required>
+            </div>
+            <div class="company-phone">
+              <input class="company" type="text" name="company" placeholder="Company">
+              <input class="phone" type="tel" name="phone" placeholder="Phone Number">
+            </div>
+            <div class="email-wrap">
+              <input class="email-input" type="email" name="email" placeholder="Email Address*" required>
+            </div>
+            <div class="text-wrap">
+              <textarea id="textarea" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+            </div>
+            <button class="form-button" type="submit">submit</button>
+          </form>
         </div>
       </div>
       <div class="col4"></div>
