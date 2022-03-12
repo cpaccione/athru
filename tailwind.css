@@ -26,3 +26,7 @@
 .wpcf7-textarea {
     @apply w-full;
 }
+
+.grecaptcha-badge {
+    @apply hidden;
+}

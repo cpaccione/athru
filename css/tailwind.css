@@ -731,3 +731,7 @@ select {
 .wpcf7 #first-name, .wpcf7 #last-name, .wpcf7 #company, .wpcf7 #phone-number, .wpcf7 #email-address, .wpcf7-textarea {
   width: 100%;
 }
+
+.grecaptcha-badge {
+  display: none;
+}
