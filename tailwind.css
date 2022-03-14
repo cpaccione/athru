@@ -30,3 +30,7 @@
 .grecaptcha-badge {
     @apply hidden;
 }
+
+.post-navigation .nav-links {
+    @apply flex;
+}

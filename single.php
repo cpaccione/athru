@@ -35,17 +35,12 @@ get_header();
 
 					get_template_part( 'template-parts/content-single', get_post_type() );
 
-					the_post_navigation( array(
-						'prev_text' => _( '<span>Previous Article:</span>&nbsp; %title'),
-						'next_text' => _( '<span>Next Article:</span>&nbsp; %title'),
-						'in_same_term' => true
-					));
-
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					// if ( comments_open() || get_comments_number() ) :
-					// 	comments_template();
-					// endif;
+					the_post_navigation(
+						array(
+							'prev_text' => '<span class="border-2 border-solid border-blue text-base text-blue text-center flex h-12 w-40 items-center justify-center rounded-sm text-cont-gray hover:bg-blue hover:text-white mr-6">' . esc_html__( 'PREVIOUS', 'realestate' ) . '</span>',
+							'next_text' => '<span class="border-2 border-solid border-blue text-base text-blue flex h-12 w-40 items-center justify-center rounded-sm text-cont-gray hover:bg-blue hover:text-white">' . esc_html__( 'NEXT', 'realestate' ) . '</span>',
+						)
+					);
 
 				endwhile; // End of the loop.
 				?>
