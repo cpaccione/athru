@@ -10,7 +10,7 @@ function my_acf_blocks_init() {
         acf_register_block_type(array(
             'name'              => 'home_hero',
             'title'             => __('Home Hero'),
-            'description'       => __('This block creates the home hero.'),
+            'description'       => __('Creates the home hero.'),
             'category'          => 'layout',
             'post_types'        => array('page'),
             'render_template'   => 'template-parts/blocks/home-hero.php',
@@ -30,10 +30,31 @@ function my_acf_blocks_init() {
         acf_register_block_type(array(
             'name'              => 'our_mission',
             'title'             => __('Our Mission'),
-            'description'       => __('This block created the our mission section'),
+            'description'       => __('Creates the our mission section'),
             'category'          => 'layout',
             'post_types'        => array('page'),
             'render_template'   => 'template-parts/blocks/our-mission.php',
+            'mode'              => 'edit',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#FFB81C',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'block-default',
+                ),
+            'keywords'          => array( 'hero', 'home' ),
+        ));
+
+
+        // What We Offer
+        acf_register_block_type(array(
+            'name'              => 'what_we_offer',
+            'title'             => __('What We Offer'),
+            'description'       => __('Creates the what we offer section'),
+            'category'          => 'layout',
+            'post_types'        => array('page'),
+            'render_template'   => 'template-parts/blocks/what-we-offer.php',
             'mode'              => 'edit',
             'icon' => array(
                 // Specifying a background color to appear with the icon e.g.: in the inserter.
