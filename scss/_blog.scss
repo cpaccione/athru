@@ -264,11 +264,11 @@
 }
 
 .content-area {
-    background-color: $white;
-    display: grid;
-    grid-template-areas: "main" "sidebar";
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
+    // background-color: $white;
+    // display: grid;
+    // grid-template-areas: "main" "sidebar";
+    // grid-template-columns: 1fr;
+    // grid-gap: 3rem;
 
     @include responsive(min-width, 768px) {
         grid-template-areas: "main sidebar";
