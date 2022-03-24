@@ -1,7 +1,7 @@
 <?php
 
   /**
-   * Full Screen Hero Block Template.
+   * What We Offer Block Template
    *
    * @param   array $block The block settings and attributes.
    * @param   string $content The block inner HTML (empty).
@@ -24,12 +24,23 @@
       $className .= ' align' . $block['align'];
   }
 
+  $title = get_field('title');
+  $sub = get_field('subtitle');
+  $text = get_field('text_area');
+  $link = get_field('cta_link');
+
 ?>
 
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> what-we-offer-mobile">
-    <h2>what we offer</h2>
-    <h3>what can Athru do for you?</h3>
-    <p>We are a leading advisor to independent marketing services and tech business companies, who want to maximize their value and capitalize on greater returns with special focus on companies considering either an acquisition or sale transaction.</p>
+    <?php if ($title): ?>
+      <h2><?php echo $title; ?></h2>
+    <?php endif; ?>
+    <?php if ($sub): ?>
+      <h3><?php echo $sub; ?></h3>
+    <?php endif; ?>
+    <?php if ($text): ?>
+      <p><?php echo $text; ?></p>
+    <?php endif; ?>
     <div class="mission-attributes">
       <div class="mission-list">
         <div class="mission-wrap">
@@ -55,7 +66,9 @@
       </div>
     </div>
     <div class="button-container">
-      <a class="main-button" href="<?php the_field('what_we_offer_button'); ?>">view offerings</a>
+      <?php if($link): ?>
+        <a class="main-button" target="<?php echo $link['target']; ?>" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+      <?php endif; ?>
     </div>
   </div>
 
@@ -63,8 +76,12 @@
     <div class="col1"></div>
     <div class="col2">
       <div class="wrap">
-        <h3 data-aos="fade-right">what can athru do for you?</h3>
-        <p data-aos="fade-up">We are a leading advisor to independent marketing services and tech business companies, who want to maximize their value and capitalize on greater returns with special focus on companies considering either an acquisition or sale transaction.</p>
+        <?php if ($sub): ?>
+          <h3 data-aos="fade-right"><?php echo $sub; ?></h3>
+        <?php endif; ?>
+        <?php if ($text): ?>
+          <p data-aos="fade-up"><?php echo $text; ?></p>
+        <?php endif; ?>
         <div class="mission-attributes-desktop">
           <div class="mission-list">
             <div class="mission-wrap">
@@ -90,15 +107,17 @@
           </div>
           <div class="offerings">
             <div class="button-container">
-              <a class="main-button" href="<?php the_field('what_we_offer_button'); ?>">view offerings</a>
+                <?php if($link): ?>
+                  <a class="main-button" target="<?php echo $link['target']; ?>" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+                <?php endif; ?>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="col3">
-    <img class="ribbon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/ribbon_what_we_offer.svg" alt="red ribbon what we offer">
-    <img class="ribbon reverse" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/blank_red_ribbon.svg" alt="blank red ribbon">
+      <img class="ribbon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/ribbon_what_we_offer.svg" alt="red ribbon what we offer">
+      <img class="ribbon reverse" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/blank_red_ribbon.svg" alt="blank red ribbon">
     </div>
     <div class="col4"></div>
   </div>
