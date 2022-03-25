@@ -41,30 +41,31 @@
     <?php if ($text): ?>
       <p><?php echo $text; ?></p>
     <?php endif; ?>
+
+    <?php if( have_rows('mission_list_repeater') ): ?>
     <div class="mission-attributes">
       <div class="mission-list">
         <div class="mission-wrap">
-          <div data-aos="fade-right" class="icon">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_one.svg">
-          </div>
-          <div data-aos="fade-right" class="copy">
-            <span>optimize performance</span>
-          </div>
-          <div data-aos="fade-right" class="icon">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_two.svg">
-          </div>
-          <div data-aos="fade-right" class="copy">
-            <span>accelerate growth</span>
-          </div>
-          <div data-aos="fade-right" class="icon">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_three.svg">
-          </div>
-          <div data-aos="fade-right" class="copy">
-            <span>maximize value</span>
-          </div>
+          <?php while( have_rows('mission_list_repeater') ): the_row();
+          
+          $icon = get_sub_field('icon');
+          $icon_text = get_sub_field('icon_text');
+          
+          ?>
+
+            <div data-aos="fade-right" class="icon">
+                <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+            </div>
+            <div data-aos="fade-right" class="copy">
+                <span><?php echo $icon_text; ?></span>
+            </div>
+
+          <?php endwhile; ?>
         </div>
       </div>
     </div>
+    <?php endif; ?>
+
     <div class="button-container">
       <?php if($link): ?>
         <a class="main-button" target="<?php echo $link['target']; ?>" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
@@ -85,24 +86,23 @@
         <div class="mission-attributes-desktop">
           <div class="mission-list">
             <div class="mission-wrap">
-              <div data-aos="fade-right" class="icon">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_one.svg">
-              </div>
-              <div data-aos="fade-right" class="copy">
-                <span>optimize performance</span>
-              </div>
-              <div data-aos="fade-right" class="icon">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_two.svg">
-              </div>
-              <div data-aos="fade-right" class="copy">
-                <span>accelerate growth</span>
-              </div>
-              <div data-aos="fade-right" class="icon">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon_three.svg">
-              </div>
-              <div data-aos="fade-right" class="copy">
-                <span>maximize value</span>
-              </div>
+              
+            <?php while( have_rows('mission_list_repeater') ): the_row();
+          
+          $icon = get_sub_field('icon');
+          $icon_text = get_sub_field('icon_text');
+          
+          ?>
+
+            <div data-aos="fade-right" class="icon">
+                <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+            </div>
+            <div data-aos="fade-right" class="copy">
+                <span><?php echo $icon_text; ?></span>
+            </div>
+
+          <?php endwhile; ?>
+          
             </div>
           </div>
           <div class="offerings">
