@@ -107,5 +107,45 @@ function my_acf_blocks_init() {
             'keywords'          => array( 'Who we are', 'block' ),
         ));
 
+        // Credentials Block
+        acf_register_block_type(array(
+            'name'              => 'credentials',
+            'title'             => __('Credentials'),
+            'description'       => __('Creates the credentials block'),
+            'category'          => 'layout',
+            'post_types'        => array('page'),
+            'render_template'   => 'template-parts/blocks/credentials.php',
+            'mode'              => 'edit',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#272D40',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'block-default',
+                ),
+            'keywords'          => array( 'Credentials', 'block' ),
+        ));
+
+        // Contact Block
+        acf_register_block_type(array(
+            'name'              => 'contact',
+            'title'             => __('Contact'),
+            'description'       => __('Creates the contact block'),
+            'category'          => 'layout',
+            'post_types'        => array('page'),
+            'render_template'   => 'template-parts/blocks/contact.php',
+            'mode'              => 'edit',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#272D40',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'block-default',
+                ),
+            'keywords'          => array( 'contact', 'block' ),
+        ));
+
     }
 }

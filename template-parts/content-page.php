@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('relative'); ?>>
 	<!-- <header class="entry-header"> -->
 		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	<!-- </header> -->
@@ -29,7 +29,7 @@
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="fixed left-0 bottom-0 w-24 h-16 bg-red">
 			<?php
 			edit_post_link(
 				sprintf(
