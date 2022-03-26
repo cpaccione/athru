@@ -17,7 +17,7 @@ function my_acf_blocks_init() {
             'mode'              => 'edit',
             'icon' => array(
                 // Specifying a background color to appear with the icon e.g.: in the inserter.
-                'background' => '#FFB81C',
+                'background' => '#272D40',
                 // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
                 'foreground' => '#ffffff',
                 // Specifying a dashicon for the block
@@ -30,14 +30,14 @@ function my_acf_blocks_init() {
         acf_register_block_type(array(
             'name'              => 'our_mission',
             'title'             => __('Our Mission'),
-            'description'       => __('Creates the our mission section'),
+            'description'       => __('Creates the our mission block'),
             'category'          => 'layout',
             'post_types'        => array('page'),
             'render_template'   => 'template-parts/blocks/our-mission.php',
             'mode'              => 'edit',
             'icon' => array(
                 // Specifying a background color to appear with the icon e.g.: in the inserter.
-                'background' => '#FFB81C',
+                'background' => '#272D40',
                 // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
                 'foreground' => '#ffffff',
                 // Specifying a dashicon for the block
@@ -51,14 +51,14 @@ function my_acf_blocks_init() {
         acf_register_block_type(array(
             'name'              => 'what_we_offer',
             'title'             => __('What We Offer'),
-            'description'       => __('Creates the what we offer section'),
+            'description'       => __('Creates the what we offer block'),
             'category'          => 'layout',
             'post_types'        => array('page'),
             'render_template'   => 'template-parts/blocks/what-we-offer.php',
             'mode'              => 'edit',
             'icon' => array(
                 // Specifying a background color to appear with the icon e.g.: in the inserter.
-                'background' => '#FFB81C',
+                'background' => '#272D40',
                 // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
                 'foreground' => '#ffffff',
                 // Specifying a dashicon for the block
@@ -71,14 +71,34 @@ function my_acf_blocks_init() {
         acf_register_block_type(array(
             'name'              => 'who_we_are',
             'title'             => __('Who We Are'),
-            'description'       => __('Creates the what we offer section'),
+            'description'       => __('Creates the who we are block'),
             'category'          => 'layout',
             'post_types'        => array('page'),
             'render_template'   => 'template-parts/blocks/who-we-are.php',
             'mode'              => 'edit',
             'icon' => array(
                 // Specifying a background color to appear with the icon e.g.: in the inserter.
-                'background' => '#FFB81C',
+                'background' => '#272D40',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'block-default',
+                ),
+            'keywords'          => array( 'Who we are', 'block' ),
+        ));
+
+        // Our Team Block
+        acf_register_block_type(array(
+            'name'              => 'our_team',
+            'title'             => __('Our Team'),
+            'description'       => __('Creates the our team block'),
+            'category'          => 'layout',
+            'post_types'        => array('page'),
+            'render_template'   => 'template-parts/blocks/our-team.php',
+            'mode'              => 'edit',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#272D40',
                 // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
                 'foreground' => '#ffffff',
                 // Specifying a dashicon for the block

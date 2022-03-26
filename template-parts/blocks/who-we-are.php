@@ -9,29 +9,12 @@
    * @param   (int|string) $post_id The post ID this block is saved to.
    */
 
-  // Create id attribute allowing for custom "anchor" value.
-  $id = 'who-we-are-' . $block['id'];
-  if( !empty($block['anchor']) ) {
-      $id = $block['anchor'];
-  }
-
-  // Create class attribute allowing for custom "className" and "align" values.
-  $className = 'who-we-are';
-  if( !empty($block['className']) ) {
-      $className .= ' ' . $block['className'];
-  }
-  if( !empty($block['align']) ) {
-      $className .= ' align' . $block['align'];
-  }
-
   $title = get_field('title');
   $subtitle = get_field('subtitle');
-  $text_mobile = get_field('mobile_text_area');
   $text_desktop = get_field('text_area');
 
 ?>
 
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
   <!-- who we are mobile -->
   <div class="who-we-are">
     <?php if($title): ?>
@@ -42,9 +25,9 @@
       <h3><?php echo $subtitle; ?></h3>
     <?php endif; ?>
 
-    <?php if($text_mobile): ?>
+    <?php if($text_desktop): ?>
       <div>
-        <?php echo $text_mobile; ?>
+        <?php echo $text_desktop; ?>
       </div>
     <?php endif; ?>
   </div>
@@ -62,11 +45,13 @@
             <h3 data-aos="fade-left"><?php echo $subtitle; ?></h3>
         <?php endif; ?>
         <div class="fade-up">
-          <?php echo $text_desktop; ?>
+            <?php if($text_desktop): ?>
+                <div>
+                    <?php echo $text_desktop; ?>
+                </div>
+            <?php endif; ?>
         </div>
       </div>
     </div>
     <div class="col4"></div>
   </div>
-  
-</div>
