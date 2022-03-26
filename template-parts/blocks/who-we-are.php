@@ -26,30 +26,27 @@
 
   $title = get_field('title');
   $subtitle = get_field('subtitle');
-  $text_mobile = get_field('text_mobile');
-  $text_desktop = get_field('text_desktop');
+  $text_mobile = get_field('mobile_text_area');
+  $text_desktop = get_field('text_area');
 
 ?>
 
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <!-- who we are mobile -->
-    <div class="who-we-are">
-        <?php if($title): ?>
-            <h2><?php echo $title; ?></h2>
-        <?php endif; ?>
+  <!-- who we are mobile -->
+  <div class="who-we-are">
+    <?php if($title): ?>
+      <h2><?php echo $title; ?></h2>
+    <?php endif; ?>
 
-        <?php if($subtitle): ?>
-            <h2><?php echo $subtitle; ?>
-        <?php endif; ?>
+    <?php if($subtitle): ?>
+      <h3><?php echo $subtitle; ?></h3>
+    <?php endif; ?>
 
-        <?php if($text_mobile): ?>
-
-            <div>
-                <?php echo $text_mobile; ?>
-            </div>
-
-        <?php endif; ?>
-    <p>Athru Strategic Advisory capabilities and services is enhanced through our Cooperation Agreement with leading, Investment Bank, <a style="color: #434E6E; text-decoration: underline;" href="https://resultsig.com/" target="_blank">Results International</a> which serves the Global Marketing, Technology and Healthcare sectors through offices in New York, London, Tokyo and Singapore.</p>
+    <?php if($text_mobile): ?>
+      <div>
+        <?php echo $text_mobile; ?>
+      </div>
+    <?php endif; ?>
   </div>
 
   <!-- who we are desktop -->
@@ -61,10 +58,15 @@
     </div>
     <div class="col3">
       <div class="wrap">
-        <h3 data-aos="fade-left">Strategic Advice Supported By Investment Bank Expertise And Connectivity.</h3>
-        <p data-aos="fade-up">Athru Strategic Advisory capabilities and services are enhanced through our working partnerships with several leading investment banks.</p>
+        <?php if($subtitle): ?>
+            <h3 data-aos="fade-left"><?php echo $subtitle; ?></h3>
+        <?php endif; ?>
+        <div class="fade-up">
+          <?php echo $text_desktop; ?>
+        </div>
       </div>
     </div>
     <div class="col4"></div>
   </div>
+  
 </div>
