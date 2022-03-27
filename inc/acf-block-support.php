@@ -147,5 +147,25 @@ function my_acf_blocks_init() {
             'keywords'          => array( 'contact', 'block' ),
         ));
 
+        // Page Title Block
+        acf_register_block_type(array(
+            'name'              => 'page_title',
+            'title'             => __('Page Title'),
+            'description'       => __('Creates the page title block.'),
+            'category'          => 'layout',
+            'post_types'        => array('page'),
+            'render_template'   => 'template-parts/blocks/page-title.php',
+            'mode'              => 'edit',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#272D40',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'block-default',
+                ),
+            'keywords'          => array( 'page', 'title' ),
+        ));
+
     }
 }
