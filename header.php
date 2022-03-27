@@ -58,8 +58,18 @@
 
 	<nav class="nav">
     <div class="logo">
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url(get_template_directory_uri() );?>/images/logo.svg" alt="Athru Partners"></a>
+      <?php 
+      $logo = get_field('main_logo', 'options');
+
+      if( get_field('main_logo', 'options') ):
+      
+      ?>
+	      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+          <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+        </a>
+      <?php endif; ?>
     </div>
+
 
 		<?php
 			wp_nav_menu( array(
