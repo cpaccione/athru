@@ -21,14 +21,23 @@
       $className .= ' ' . $block['className'];
   }
 
+  $title = get_field('title');
+  $subtitle = get_field('subtitle');
+
 ?>
 
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <div class="max-w-5xl px-4 mx-auto">
-        <div class="flex items-center h-80 max-w-lg">
-            <div class="wrap text-white">
-                <h1 class="text-5xl md:text-7xl border-l-2 border-white pl-3 mb-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"><?php the_field('title'); ?></h1>
-                <p class="text-xl"><?php the_field('subtitle'); ?></p>
+    <div class="container">
+        <!-- hero -->
+        <div class="header-contact">
+            <div class="wrap">
+                <?php if($title): ?>
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"><?php echo $title; ?></h2>
+                <?php endif; ?>
+
+                <?php if($subtitle): ?>
+                    <p><?php echo $subtitle; ?></p>
+                <?php endif; ?>
             </div>
         </div>
     </div>

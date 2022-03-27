@@ -19,6 +19,10 @@ module.exports = {
           '3': '#1F2433'
         }
       },
+
+      fontFamily: {
+        'display': ['FormaDJRDisplay', 'sans-serif']
+      },
   },
 },
   plugins: [

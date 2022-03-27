@@ -167,5 +167,25 @@ function my_acf_blocks_init() {
             'keywords'          => array( 'page', 'title' ),
         ));
 
+        // Service Section Block
+        acf_register_block_type(array(
+            'name'              => 'service_section',
+            'title'             => __('Service Section'),
+            'description'       => __('Creates the Service section block.'),
+            'category'          => 'layout',
+            'post_types'        => array('page'),
+            'render_template'   => 'template-parts/blocks/service-section.php',
+            'mode'              => 'edit',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#272D40',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'block-default',
+                ),
+            'keywords'          => array( 'service', 'section' ),
+        ));
+
     }
 }
