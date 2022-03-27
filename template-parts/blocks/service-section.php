@@ -32,14 +32,14 @@
                 
                     $s_header = get_sub_field('service_header_title');
                     $s_icon = get_sub_field('service_header_icon');
-                    $_desc = get_sub_field('service_description');
+                    $s_desc = get_sub_field('service_description');
                 
                 ?>
 
                     <div class="s-header">
                         <div class="copy">
                             <?php if($s_header): ?>
-                                <h2><?php echo $s_header; ?>
+                                <h2><?php echo $s_header; ?></h2>
                             <?php endif; ?>
 
                             <?php if($s_desc): ?>
