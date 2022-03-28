@@ -1,19 +1,6 @@
 (function () {
     "use strict";
-    
-    function responsiveImage() {
-
-        var i,
-            imgResponsive = document.querySelectorAll('img');
-
-        for (i = 0; i < imgResponsive.length; i++ ) {
-            imgResponsive[i].classList += " img-fluid";
-        }
-
-    }
-
-  responsiveImage();
-
+  
   var navButton = document.querySelector('.mobile-menu'),
       closeButton = document.querySelector('.closebtn');
   console.log(navButton);

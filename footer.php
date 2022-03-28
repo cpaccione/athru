@@ -15,12 +15,32 @@
 
 				<footer id="colophon" class="site-footer">
 					<div class="site-info">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer_logo.svg" alt="Athru footer logo">
-						<p>&copy; <?php echo date('Y'); ?> Athru Partners. All rights reserved.</p><br>
-						<p>Athru Partners</p>
-						<p>325 N. LaSalle Street 5th Floor</p>
-						<p>Chicago, IL 60654</p>
-						<a class="phone-number" href="tel:8473131482">847-313-1482</a>
+						<?php
+						
+							$footer_logo = get_field('footer_logo', 'options');
+
+							if($footer_logo):
+			
+						?>
+
+							<img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>">
+
+						<?php endif; ?>
+
+						<p>&copy; <?php echo date('Y'); ?> <?php the_field('copyright_text', 'options'); ?></p><br>
+						
+						<?php
+						
+							$address = get_field('footer_address', 'options');
+							
+							if ($address):
+							
+							echo $address;
+							
+							endif;
+						
+						?>
+						<a class="phone-number" href="tel:<?php the_field('footer_phone_number', 'options'); ?>"><?php the_field('footer_phone_number_label', 'options'); ?></a>
 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
 			</div><!-- #page -->
