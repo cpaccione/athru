@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.blog {
+    background-image: url(../images/blog-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .wpcf7-submit {
     @apply
     font-bold

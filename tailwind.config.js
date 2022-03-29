@@ -11,6 +11,10 @@ module.exports = {
         'red': {
           'DEFAULT': '#E00A28'
         },
+        'tan': {
+          'DEFAULT': '#F4EADB',
+          '2': '#EAD7BA'
+        },
         'a-tan': '#EAD7BA',
         'a-tan-light': '#F4EADB',
         'blue': {

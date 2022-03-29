@@ -30,13 +30,13 @@ get_header();
     </div>
 </div>
 
-<div class="blog-wrap">
+<!-- <div class="blog-wrap"> -->
 
-    <div class="container">
-        <div id="primary" class="content-area">
+    <!-- <div class="container"> -->
+        <div id="primary" class="max-w-7xl px-8 mx-auto grid gap-x-7 md:grid-cols-3">
 
 
-            <main id="main" class="site-main">
+            <main id="main" class="site-main col-span-2">
 
             <?php
             if ( have_posts() ) :
@@ -44,7 +44,7 @@ get_header();
                 if ( is_home() && ! is_front_page() ) :
                     ?>
                     <header>
-                        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                        <h1 class="page-title screen-reader-text text-4xl text-blue"><?php single_post_title(); ?></h1>
                     </header>
                     <?php
                 endif;
@@ -84,10 +84,15 @@ get_header();
             <!-- /#pagination -->
 
             </main><!-- #main -->
-            <?php get_sidebar(); ?>
+            <aside class="col-span-1">
+                <div class="bg-white">
+                    <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                </div>
+            </aside>
         </div>
-    </div><!-- #primary -->
+    <!-- </div> -->
+    <!-- #primary -->
 
-</div>
+<!-- </div> -->
 
 <?php get_footer(); ?>
