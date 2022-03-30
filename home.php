@@ -85,7 +85,7 @@ get_header();
 
             </main><!-- #main -->
             <aside class="col-span-1">
-                <div class="bg-white">
+                <div class="bg-white px-12 py-5 min-h-[730px]">
                     <?php dynamic_sidebar( 'sidebar-1' ); ?>
                 </div>
             </aside>

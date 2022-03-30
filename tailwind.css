@@ -41,3 +41,27 @@
 .post-navigation .nav-links {
     @apply flex;
 }
+
+.widget_search {
+    margin-top: 8px !important;
+}
+
+.wp-block-search__label {
+    @apply sr-only;
+}
+
+.wp-block-search__button {
+    @apply bg-red text-white text-base font-display ml-0 border-0;
+}
+
+.widget_recent_entries .widget-title {
+    @apply mb-4;
+}
+
+.widget_recent_entries ul {
+    @apply space-y-4;
+}
+
+.widget_recent_entries ul a {
+    @apply text-red font-display text-base;
+}
