@@ -234,3 +234,42 @@ right: 35px;
       max-width: 500px;
     }
 }
+
+.page-title-bg {
+  height: 
+}
+
+// services page
+.header-service {
+    height: 350px;
+    display: flex;
+    align-items: center; 
+    padding: 0 1rem 0 1rem;
+
+    // @include responsive(min-width, 600px) {
+    //     padding: 0;
+    //     height: 477px;
+    // }
+
+    h1 {
+        font-family: $display;
+        color: $white;
+        font-size: 3rem;
+        border-left: 3px solid $white;
+        padding-left: 0.9375rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    
+        @include responsive(min-width, 600px) {
+          font-size: 5.375rem;
+        }
+      }
+    
+      p {
+        color: $white;
+        font-size: 1.375rem;
+        font-family: $micro;
+        font-weight: 300;
+        max-width: 500px;
+      }
+}
