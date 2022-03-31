@@ -1,7 +1,7 @@
 <?php
 
   /**
-   * Page Title Block
+   * Page Title with background image Block
    *
    * @param   array $block The block settings and attributes.
    * @param   string $content The block inner HTML (empty).
@@ -23,22 +23,21 @@
 
   $title = get_field('title');
   $subtitle = get_field('subtitle');
+  $bg = get_field('background_image');
 
 ?>
 
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <div class="max-w-6xl px-9">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="background-image: url('<?php echo $bg['url']; ?>);">
+    <div class="container">
         <!-- hero -->
-        <div class="header-contact">
-            <div class="wrap">
-                <?php if($title): ?>
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"><?php echo $title; ?></h2>
-                <?php endif; ?>
+        <div class="page-title-bg__content">
+            <?php if($title): ?>
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"><?php echo $title; ?></h2>
+            <?php endif; ?>
 
-                <?php if($subtitle): ?>
-                    <p><?php echo $subtitle; ?></p>
-                <?php endif; ?>
-            </div>
+            <?php if($subtitle): ?>
+                <p><?php echo $subtitle; ?></p>
+            <?php endif; ?>
         </div>
     </div>
 </div>

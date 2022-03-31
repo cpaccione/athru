@@ -236,7 +236,19 @@ right: 35px;
 }
 
 .page-title-bg {
-  height: 
+  display: flex;
+  align-items: flex-end;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__content {
+    h1 {
+      color: $white;
+      font-size: 5.375rem;
+    }
+  }
 }
 
 // services page
