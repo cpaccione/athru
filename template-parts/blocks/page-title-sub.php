@@ -1,7 +1,7 @@
 <?php
 
   /**
-   * Page Title with background image Block
+   * Page Title Block
    *
    * @param   array $block The block settings and attributes.
    * @param   string $content The block inner HTML (empty).
@@ -10,25 +10,25 @@
    */
 
   // Create id attribute allowing for custom "anchor" value.
-  $id = 'page-title-bg-' . $block['id'];
+  $id = 'page-title-sub-' . $block['id'];
   if( !empty($block['anchor']) ) {
       $id = $block['anchor'];
   }
 
   // Create class attribute allowing for custom "className" and "align" values.
-  $className = 'page-title-bg';
+  $className = 'page-title-sub';
   if( !empty($block['className']) ) {
       $className .= ' ' . $block['className'];
   }
 
   $title = get_field('title');
   $subtitle = get_field('subtitle');
-  $bg = get_field('background_image');
+  $bg = get_field('background-image');
 
 ?>
 
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> bg-center bg-no-repeat bg-cover" style="background-image: url('<?php echo $bg['url']; ?>);">
-    <div class="max-w-5xl px-4 mx-auto flex items-end h-96">
+    <div class="max-w-5xl px-4 mx-auto flex items-end h-[500px]">
         <!-- hero -->
         <div class="text-white font-display mb-12">
             <?php if($title): ?>

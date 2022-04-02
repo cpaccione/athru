@@ -151,7 +151,7 @@ function my_acf_blocks_init() {
         acf_register_block_type(array(
             'name'              => 'page_title',
             'title'             => __('Page Title'),
-            'description'       => __('Creates the page title block.'),
+            'description'       => __('Creates the page title block with an optional background image.'),
             'category'          => 'layout',
             'post_types'        => array('page'),
             'render_template'   => 'template-parts/blocks/page-title.php',
@@ -189,12 +189,12 @@ function my_acf_blocks_init() {
 
         // Page Title with background image
         acf_register_block_type(array(
-            'name'              => 'page_title_with_background',
-            'title'             => __('Page title with background'),
-            'description'       => __('Creates the page title with a background image.'),
+            'name'              => 'page_title_with_subtitle',
+            'title'             => __('Page title with subtitle'),
+            'description'       => __('Creates the page title with a subtitle and an optional background image.'),
             'category'          => 'layout',
             'post_types'        => array('page'),
-            'render_template'   => 'template-parts/blocks/page-title-bg.php',
+            'render_template'   => 'template-parts/blocks/page-title-sub.php',
             'mode'              => 'edit',
             'icon' => array(
                 // Specifying a background color to appear with the icon e.g.: in the inserter.
