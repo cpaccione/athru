@@ -27,16 +27,16 @@
 
 ?>
 
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="background-image: url('<?php echo $bg['url']; ?>);">
-    <div class="container">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> bg-center bg-no-repeat bg-cover" style="background-image: url('<?php echo $bg['url']; ?>);">
+    <div class="max-w-5xl px-4 mx-auto flex items-end h-96">
         <!-- hero -->
-        <div class="page-title-bg__content">
+        <div class="text-white font-display mb-12">
             <?php if($title): ?>
-                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"><?php echo $title; ?></h2>
+                <h1 class="border-l-4 border-white pl-3 text-5xl lg:text-7xl mb-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"><?php echo $title; ?></h2>
             <?php endif; ?>
 
             <?php if($subtitle): ?>
-                <p><?php echo $subtitle; ?></p>
+                <p class="text-xl max-w-3xl mb-8"><?php echo $subtitle; ?></p>
             <?php endif; ?>
         </div>
     </div>
