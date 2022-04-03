@@ -56,7 +56,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'athrupartners' ); ?></a>
 
-	<nav class="nav">
+	<nav class="nav max-w-6xl flex flex-row mx-auto bg-blue">
     <div class="logo">
       <?php 
       $logo = get_field('main_logo', 'options');

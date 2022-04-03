@@ -1,16 +1,16 @@
 
 
 .nav {
-  z-index: 9999;
-  background-color: $theme_blue_two;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  max-width: 1248px;
-  display: flex;
-  flex-direction: row;
+  // z-index: 9999;
+  // background-color: $theme_blue_two;
+  // margin: 0 auto;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // max-width: 1248px;
+  // display: flex;
+  // flex-direction: row;
 
   @include responsive(min-width, 890px) {
     height: 69px;

@@ -120,6 +120,7 @@ add_action( 'widgets_init', 'athrupartners_widgets_init' );
  * Enqueue scripts and styles.
  */
 function athrupartners_scripts() {
+	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', '4.1.1', 'all' );
 	wp_enqueue_style ('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', '1.0', 'all' );
 	//wp_enqueue_style( 'athrupartners-style', get_stylesheet_uri(), [], '0.0.1', 'all');
 	wp_enqueue_style ('tailwind', get_template_directory_uri() . '/css/tailwind.css', array(), '0.0.4', 'all' );
@@ -127,7 +128,7 @@ function athrupartners_scripts() {
 	
 	//wp_enqueue_style( 'athrupartners-style', get_stylesheet_uri() );
 
-//	wp_enqueue_script( 'athrupartners-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'athrupartners-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'athrupartners-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

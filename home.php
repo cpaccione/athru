@@ -33,10 +33,10 @@ get_header();
 <!-- <div class="blog-wrap"> -->
 
     <!-- <div class="container"> -->
-        <div id="primary" class="max-w-7xl px-8 mx-auto grid gap-x-7 md:grid-cols-3">
+        <div id="primary" class="max-w-7xl px-8 mx-auto grid gap-x-7 md:grid-cols-3 pb-12 md:pb-0">
 
 
-            <main id="main" class="site-main col-span-2">
+            <main id="main" class="site-main md:col-span-2">
 
             <?php
             if ( have_posts() ) :
@@ -84,7 +84,7 @@ get_header();
             <!-- /#pagination -->
 
             </main><!-- #main -->
-            <aside class="col-span-1">
+            <aside class="md:col-span-1">
                 <div class="bg-white px-12 py-5 min-h-[730px]">
                     <?php dynamic_sidebar( 'sidebar-1' ); ?>
                 </div>
