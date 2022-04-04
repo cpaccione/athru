@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container">
-    <div class="profile">
+    <div class="profile pt-12 md:pt-0">
 
         <div class="p-header">
 

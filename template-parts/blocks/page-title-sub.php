@@ -28,7 +28,7 @@
 ?>
 
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> bg-center bg-no-repeat bg-cover" style="background-image: url('<?php echo $bg['url']; ?>);">
-    <div class="max-w-5xl px-4 mx-auto flex items-end h-[500px]">
+    <div class="max-w-5xl px-4 mx-auto flex items-end h-96">
         <!-- hero -->
         <div class="text-white font-display mb-12">
             <?php if($title): ?>

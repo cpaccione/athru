@@ -10,15 +10,15 @@
 
 <?php get_header(); ?>
 
-
-<div class="container">
     <!-- hero -->
-    <div class="header-team">
-        <div class="wrap">
-            <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">Our Team</h1>
-            <p>Our Partners bring relentless focus and exceptional experience to helping our clients anticipate the risks, obstacles and opportunities that can come from strategic growth or divestiture decisions.</p>
+    <div class="max-w-5xl px-4 mx-auto flex items-end h-96">
+        <div class="text-white font-display mb-12">
+            <h1 class="border-l-4 border-white pl-3 text-5xl lg:text-7xl mb-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">Our Team</h1>
+            <p class="text-xl max-w-3xl mb-8">Our Partners bring relentless focus and exceptional experience to helping our clients anticipate the risks, obstacles and opportunities that can come from strategic growth or divestiture decisions.</p>
         </div>
     </div>
+
+<div class="container">
 
     <div class="team-wrap">
         <h2 class="team-title">Meet the Team</h2>
