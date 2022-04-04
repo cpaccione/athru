@@ -1358,6 +1358,18 @@ select {
   margin-right: auto;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mr-6 {
   margin-right: 1.5rem;
 }
@@ -1366,20 +1378,12 @@ select {
   margin-top: 3rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -1402,6 +1406,10 @@ select {
   display: none;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[50vh\] {
   height: 50vh;
 }
@@ -1412,10 +1420,6 @@ select {
 
 .h-16 {
   height: 4rem;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .min-h-\[730px\] {
@@ -1434,16 +1438,8 @@ select {
   width: 100%;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
-}
-
 .max-w-7xl {
   max-width: 80rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
 }
 
 .max-w-5xl {
@@ -1452,6 +1448,14 @@ select {
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .transform {
@@ -1540,18 +1544,22 @@ select {
   border-left-width: 4px;
 }
 
-.border-solid {
-  border-style: solid;
+.border-l-2 {
+  border-left-width: 2px;
 }
 
-.border-blue {
-  --tw-border-opacity: 1;
-  border-color: rgb(39 45 64 / var(--tw-border-opacity));
+.border-solid {
+  border-style: solid;
 }
 
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(39 45 64 / var(--tw-border-opacity));
 }
 
 .bg-blue {
@@ -1621,8 +1629,21 @@ select {
   padding-bottom: 6rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pb-4 {
@@ -1657,12 +1678,8 @@ select {
   padding-bottom: 6rem;
 }
 
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
+.pl-3\.5 {
+  padding-left: 0.875rem;
 }
 
 .text-center {
@@ -1670,22 +1687,16 @@ select {
 }
 
 .font-display {
-  font-family: FormaDJRDisplay, sans-serif;
+  font-family: FormaDJRDisplay, Helvetica, sans-serif;
+}
+
+.font-micro {
+  font-family: FormaDJRMicro, Helvetica, sans-serif;
 }
 
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-5xl {
@@ -1698,13 +1709,50 @@ select {
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(39 45 64 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-blue-2 {
@@ -1722,9 +1770,9 @@ select {
   color: rgb(224 10 40 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-a-tan {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(234 215 186 / var(--tw-text-opacity));
 }
 
 .blog {
@@ -1789,7 +1837,7 @@ select {
   border-width: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(224 10 40 / var(--tw-bg-opacity));
-  font-family: FormaDJRDisplay, sans-serif;
+  font-family: FormaDJRDisplay, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
@@ -1807,7 +1855,7 @@ select {
 }
 
 .widget_recent_entries ul a {
-  font-family: FormaDJRDisplay, sans-serif;
+  font-family: FormaDJRDisplay, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
@@ -1863,6 +1911,16 @@ select {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1874,6 +1932,10 @@ select {
     grid-column: span 1 / span 1;
   }
 
+  .md\:h-\[788px\] {
+    height: 788px;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1882,16 +1944,25 @@ select {
     padding-bottom: 0px;
   }
 
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
   .md\:pt-12 {
     padding-top: 3rem;
   }
 
-  .md\:pt-0 {
-    padding-top: 0px;
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;

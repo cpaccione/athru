@@ -33,7 +33,7 @@ get_header();
 <!-- <div class="blog-wrap"> -->
 
     <!-- <div class="container"> -->
-        <div id="primary" class="max-w-7xl px-8 mx-auto grid gap-x-7 md:grid-cols-3 pb-12 md:pb-0">
+        <div id="primary" class="max-w-7xl px-8 mx-auto grid gap-x-7 lg:grid-cols-3 pb-12 md:pb-0">
 
 
             <main id="main" class="site-main md:col-span-2">

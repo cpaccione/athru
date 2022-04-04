@@ -120,11 +120,11 @@ add_action( 'widgets_init', 'athrupartners_widgets_init' );
  * Enqueue scripts and styles.
  */
 function athrupartners_scripts() {
-	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', '4.1.1', 'all' );
-	wp_enqueue_style ('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', '1.0', 'all' );
+	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', '4.1.2', 'all' );
+	wp_enqueue_style ('aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', '1.0.1', 'all' );
 	//wp_enqueue_style( 'athrupartners-style', get_stylesheet_uri(), [], '0.0.1', 'all');
-	wp_enqueue_style ('tailwind', get_template_directory_uri() . '/css/tailwind.css', array(), '0.0.5', 'all' );
-	wp_enqueue_style ('main-style', get_template_directory_uri() . '/css/main.css', array(), '3.1.1', 'all' );
+	wp_enqueue_style ('tailwind', get_template_directory_uri() . '/css/tailwind.css', array(), '0.0.7', 'all' );
+	wp_enqueue_style ('main-style', get_template_directory_uri() . '/css/main.css', array(), '3.1.3', 'all' );
 	
 	//wp_enqueue_style( 'athrupartners-style', get_stylesheet_uri() );
 

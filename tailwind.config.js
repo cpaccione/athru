@@ -26,7 +26,8 @@ module.exports = {
       },
 
       fontFamily: {
-        'display': ['FormaDJRDisplay', 'sans-serif']
+        'display': ['FormaDJRDisplay', 'Helvetica', 'sans-serif'],
+        'micro': ['FormaDJRMicro', 'Helvetica', 'sans-serif']
       },
   },
 },

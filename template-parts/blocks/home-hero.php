@@ -27,15 +27,15 @@
 $title = get_field('title');
 
 ?>
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> max-w-6xl mx-auto px-4 py-8 h-96 md:h-[788px] flex items-center">
     <div class="wrap">
-        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0"><?php echo $title; ?></h1>
+        <h1 class="text-2xl sm:text-4xl text-a-tan font-micro font-bold tracking-widest mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0"><?php echo $title; ?></h1>
 
         <?php
         
             if(have_rows('list_repeater') ):
 
-                echo '<ul data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">';
+                echo '<ul class="font-display text-white text-3xl sm:text-5xl md:text-6xl border-l-2 border-white pl-3.5 leading-none mb-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">';
                 
                     while( have_rows('list_repeater') ): the_row();
 
