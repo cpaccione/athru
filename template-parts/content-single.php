@@ -9,26 +9,26 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('py-12'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('py-12 prose prose-base prose-headings:text-blue'); ?>>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title pb-4">', '</h1>' );
+			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title pb-4"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
 		<?php endif; ?>
 
-		<div class="entry-meta pb-4">
+		<div class="space-x-4">
 			<?php athrupartners_posted_on('F, Y'); ?>
 			<?php athrupartners_posted_by(); ?>
 		</div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content prose prose-base">
+	<div class="entry-content">
 
 			<?php
 			the_content();
@@ -41,7 +41,7 @@
 
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer mt-12">
+	<div class="mt-12">
 		<?php athrupartners_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</div><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

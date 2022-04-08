@@ -52,7 +52,7 @@ get_header();
 
 			</main><!-- #main -->
 			
-			<aside class="col-span-1 md:pt-12">
+			<aside class="col-span-1 md:pt-12 prose prose-sm prose-ul:list-none prose-ul:pl-0">
 				<?php dynamic_sidebar( 'sidebar-1' ); ?>
 			</aside>
 				
