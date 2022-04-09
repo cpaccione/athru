@@ -28,7 +28,7 @@
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
 
 <?php if( have_rows('testimonial_repeater') ): ?>
-    <div class="max-w-7xl px-8 mx-auto grid md:gap-y-24 gap-x-6 md:grid-cols-2 lg:grid-cols-5 my-36">
+    <div class="max-w-7xl px-8 mx-auto grid md:gap-y-24 gap-x-6 md:grid-cols-2 lg:grid-cols-5 my-12 md:my-36">
         <?php while( have_rows('testimonial_repeater') ): the_row();
         
             $first_name = get_sub_field('first_name');
