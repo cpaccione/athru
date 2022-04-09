@@ -247,5 +247,25 @@ function my_acf_blocks_init() {
             'keywords'          => array( 'clients', 'testimonials' ),
         ));
 
+        // Team Post Block
+        acf_register_block_type(array(
+            'name'              => 'profile_post',
+            'title'             => __('Profile Post'),
+            'description'       => __('The block allows you to add the post type of team anywhere on your site, but the content of the block will be added from the post type Profiles in the left side navigation in WordPress.'),
+            'category'          => 'layout',
+            'post_types'        => array('page'),
+            'render_template'   => 'template-parts/blocks/profile-post.php',
+            'mode'              => 'edit',
+            'icon' => array(
+                // Specifying a background color to appear with the icon e.g.: in the inserter.
+                'background' => '#272D40',
+                // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+                'foreground' => '#ffffff',
+                // Specifying a dashicon for the block
+                'src' => 'block-default',
+                ),
+            'keywords'          => array( 'profiles', 'team' ),
+        ));
+
     }
 }

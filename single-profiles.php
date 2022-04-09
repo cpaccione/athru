@@ -106,8 +106,24 @@
     </div>
     <div class="col3">
         <div class="contact-form">
-        <h3>To Get Started With No Obligation, Just Fill Out The Form Below. Athru Will Do The Rest.</h3>
-        <?php echo do_shortcode('[contact-form-7 id="81" title="Main Contact Form"]'); ?>
+            <?php
+
+                $contact_title = get_field('profile_single_view_contact_form_title', 'option');
+                $contact_shortcode = get_field('profile_single_view_contact_form_shortcode', 'option');
+
+            ?>
+
+            <?php if($contact_title): ?>
+                <h3><?php echo $contact_title; ?></h3>
+            <?php endif; ?>
+
+            <?php
+
+                if ($contact_shortcode) {
+                        echo do_shortcode( $contact_shortcode );
+                }
+
+            ?>
         </div>
     </div>
     <div class="col4"></div>
