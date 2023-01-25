@@ -38,7 +38,7 @@
     <div class="team-wrap">
         <h2 class="team-title">Meet the Team</h2>
 
-    <div class="team">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
         <?php
         
@@ -55,37 +55,17 @@
         <?php if( $query->have_posts() ): while( $query->have_posts() ): $query->the_post(); ?>
 
         <a href="<?php the_permalink(); ?>">
-        <div class="col">
+        <div class="col-span-1">
             
-            <div class="img-wrap">
-
-                
-
-            <div class="profile-image">
-                <div class="profile-wrap"> 
+            <!-- <div class="img-wrap"> -->
+                <!-- <div class="profile-image"> -->
+                    <!-- <div class="profile-wrap"> -->
                     <?php the_post_thumbnail( 'post-thumbnail', ['class' => 'profile'] ); ?>
-                    <p class="title" class="position"><?php the_field('title'); ?></p>
-                </div>
-            </div>
-
-            <div class="overlay">
-                <div class="profile-wrap-overlay">
-
-                <?php 
-
-                $image = get_field('rollover_image');
-
-                if( !empty($image) ): ?>                    
-                
-                    <img class="profile-o" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt']; ?>">
-
-                <?php endif; ?>
-
-
-                <?php the_title('<p class="title-o">', '</p>'); ?>
-                </div>
-            </div>
-            </div>
+                    <p class="text-lg pt-4 text-white sm:text-blue"><?php the_title(); ?></p>
+                    <p class="text-lg font-bold text-white sm:text-blue-2 mb-4"><?php the_field('title', get_the_id() ); ?></p>
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
         
         </div>
         </a>
